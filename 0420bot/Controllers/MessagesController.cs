@@ -26,7 +26,7 @@ namespace _0420bot
                 int length = (activity.Text ?? string.Empty).Length;
 
                 // return our reply to the user
-                Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
+                Activity reply = activity.CreateReply($"간단한 메시지 테스트입니다. {activity.Text} 라는 문장의 길이는 {length} 입니다.");
                 await connector.Conversations.ReplyToActivityAsync(reply);
             }
             else
